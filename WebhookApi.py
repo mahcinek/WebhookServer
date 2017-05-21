@@ -8,8 +8,8 @@ class SimpleEcho(WebSocket):
     def handleMessage(self):
         # echo message back to client
 
-            time.sleep(randint(0,3))
-            value=str(randint(5,29))
+            time.sleep(randint(2,3))
+            value=str(randint(0,30))
             print value
             self.sendMessage(value)
 
